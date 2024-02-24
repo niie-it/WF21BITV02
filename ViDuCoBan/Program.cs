@@ -7,8 +7,59 @@ Tính điểm trung bình (= (toan *2 + ly + hoa)/4) và hiển thị xếp lo�
 8 <= điểm < 9: giỏi
 Điểm >= 9:xuất sắc
 */
-double Toan, Ly, Hoa;
+using System.Text;
 
-Console.Write("Điểm Toán: ");
-Toan = double.Parse(Console.ReadLine());
-Console.WriteLine($"Toán: {Toan}");
+double Toan, Ly, Hoa;
+Console.OutputEncoding = Encoding.UTF8;
+
+while (true)
+{
+	Console.Write("Điểm Toán: ");
+	if (double.TryParse(Console.ReadLine(), out Toan) && Toan >= 0 && Toan <= 10)
+	{
+		Console.WriteLine($"Toán: {Toan}");
+		break;
+	}
+	else
+	{
+		Console.WriteLine("Không hợp lệ. Nhập lại.");
+	}
+}
+
+while (true)
+{
+	Console.Write("Điểm Lý: ");
+	if (double.TryParse(Console.ReadLine(), out Ly) && Ly >= 0 && Ly <= 10)
+	{
+		Console.WriteLine($"Lý: {Ly}");
+		break;
+	}
+	else
+	{
+		Console.WriteLine("Không hợp lệ. Nhập lại.");
+	}
+}
+
+while (true)
+{
+	Console.Write("Điểm Hóa: ");
+	if (double.TryParse(Console.ReadLine(), out Hoa) && Hoa >= 0 && Hoa <= 10)
+	{
+		Console.WriteLine($"Hóa: {Hoa}");
+		break;
+	}
+	else
+	{
+		Console.WriteLine("Không hợp lệ. Nhập lại.");
+	}
+}
+
+double DTB = Math.Round((Toan * 2 + Ly + Hoa) / 4, 1);
+string XepLoai = string.Empty;
+if (DTB >= 9) { XepLoai = "Xuất sắc"; }
+else if (DTB >= 8) { XepLoai = "Giỏi"; }
+else if (DTB >= 6.5) { XepLoai = "Khá"; }
+else if (DTB >= 5) { XepLoai = "Trung Bình"; }
+else { XepLoai = "Yếu"; }
+
+Console.WriteLine($"Điểm TB: {DTB},  Loại: {XepLoai}");
