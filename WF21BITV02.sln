@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuoiPalindrome", "ChuoiPal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XoSoVietlott", "XoSoVietlott\XoSoVietlott.csproj", "{001BD714-1DE7-433D-925B-0CB4F51EAE73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemSoTu", "DemSoTu\DemSoTu.csproj", "{77E8DEB7-E8A4-4F66-A775-D7FDF2024CA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{001BD714-1DE7-433D-925B-0CB4F51EAE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{001BD714-1DE7-433D-925B-0CB4F51EAE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{001BD714-1DE7-433D-925B-0CB4F51EAE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E8DEB7-E8A4-4F66-A775-D7FDF2024CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E8DEB7-E8A4-4F66-A775-D7FDF2024CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E8DEB7-E8A4-4F66-A775-D7FDF2024CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E8DEB7-E8A4-4F66-A775-D7FDF2024CA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
