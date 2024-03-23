@@ -58,5 +58,15 @@ namespace MyWordPad
 				RtbDoc.BackColor = cd.Color;
 			}
 		}
+
+		private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			RtbDoc.Undo();
+		}
+
+		private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			RtbDoc.Copy();
+		}
 	}
 }
